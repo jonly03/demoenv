@@ -4,6 +4,14 @@ const axios = require("axios");
 
 const app = express();
 
+const PORT = process.env.PORT !== undefined ? process.env.PORT : 3000;
+
+// if (process.env.PORT !== undefined){
+//     PORT = process.env.PORT;
+// } else{
+//     PORT = 3000;
+// }
+
 // New comment
 // GET /movies route
 // expects an s query parameter
@@ -16,6 +24,6 @@ app.get("/movies", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(PORT, () => {
   console.log("Server started");
 });
