@@ -4,8 +4,6 @@ const axios = require("axios");
 
 const app = express();
 
-console.log(process.env);
-
 // New comment
 // GET /movies route
 // expects an s query parameter
